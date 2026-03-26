@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
 </head>
-<body>
-    <form>
 
+<body>
+    <form action="" method="POST">
+        <h2 align="center">Форма регистрации пользователя</h2>
+        <table align="center" cellpadding="5">
+
+            <tr>
+                <td align="right"><label for="email">E-mail</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Введите e-mail" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="pass">Пароль</label></td>
+                <td><input type="password" id="pass" name="pass" placeholder="Введите пароль" required></td>
+            </tr>
+
+            <tr>
+                <td align="right"><span>Пол</span></td>
+                <td>
+                    <label><input type="radio" name="gender" value="m" checked> Мужчина</label>
+                    <label><input type="radio" name="gender" value="f"> Женщина</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right"><label for="year">Год рождения</label></td>
+                <td>
+                    <select id="year" name="birth_year">
+                        <option value="1981">1981</option>
+                        <option value="1982">1982</option>
+                        <option value="1983">1983</option>
+                    </select> -й
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right"><span>Я знаю</span></td>
+                <td>
+                    <label><input type="checkbox" checked disabled> Русский</label><br>
+                    <label><input type="checkbox"> Испанский</label><br>
+                    <label><input type="checkbox"> Немецкий</label><br>
+                    <label><input type="checkbox"> Английский</label>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td align="right" valign="middle"><label for="about">Обо мне</label></td>
+                <td>
+                    <textarea id="about" name="about" placeholder="Напишите коротко о себе" rows="4"
+                        cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Готово</button>
+                    <button type="reset">Очистить</button>
+                </td>
+            </tr>
+
+        </table>
     </form>
 </body>
+
 </html>
