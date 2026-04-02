@@ -5,25 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
+    <style>
+        td {
+            padding: 5px;            
+            text-align: center;       
+            vertical-align: middle;   
+        }
+
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <form action="file.php" method="POST">
-        <h2>Форма регистрации пользователя</h2>
-        <table align="center" cellpadding="5">
+        <h2 style="text-align: center; padding: 5px">Форма регистрации пользователя</h2>
+        <table style="text-align: center;">
 
             <tr>
-                <td align="right"><label for="email">E-mail</label></td>
+                <td style="text-align: center; padding: 5px"><label for="email">E-mail</label></td>
                 <td><input type="email" id="email" name="email" placeholder="Введите e-mail" required></td>
             </tr>
 
             <tr>
-                <td align="right"><label for="pass">Пароль</label></td>
+                <td style="text-align: center; padding: 5px"><label for="pass">Пароль</label></td>
                 <td><input type="password" id="pass" name="pass" placeholder="Введите пароль" required></td>
             </tr>
 
             <tr>
-                <td align="right"><span>Пол</span></td>
+                <td style="text-align: center; padding: 5px"><span>Пол</span></td>
                 <td>
                     <label><input type="radio" name="gender" value="m" checked> Мужчина</label>
                     <label><input type="radio" name="gender" value="f"> Женщина</label>
@@ -31,7 +43,7 @@
             </tr>
 
             <tr>
-                <td align="right"><label for="year">Год рождения</label></td>
+                <td style="text-align: center; padding: 5px"><label for="year">Год рождения</label></td>
                 <td>
                     <select id="year" name="birth_year">
                         <option value="1981">1981</option>
@@ -42,7 +54,7 @@
             </tr>
 
             <tr>
-                <td align="right"><span>Я знаю</span></td>
+                <td style="text-align: center; padding: 5px"><span>Я знаю</span></td>
                 <td>
                     <label><input type="checkbox" checked disabled> Русский</label><br>
                     <label><input type="checkbox"> Испанский</label><br>
@@ -53,7 +65,7 @@
 
 
             <tr>
-                <td align="right" valign="middle"><label for="about">Обо мне</label></td>
+                <td style="text-align: center; padding: 5px" valign="middle"><label for="about">Обо мне</label></td>
                 <td>
                     <textarea id="about" name="about" placeholder="Напишите коротко о себе" rows="4"
                         cols="30"></textarea>
