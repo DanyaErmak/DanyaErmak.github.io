@@ -4,26 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма</title>
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding-top: 50px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        td:last-child {
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .buttons {
+            padding-top: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <form action="file.php" method="POST">
+<<<<<<< HEAD
         <h2 align="center">Форма регистрации пользователя</h2>
         <table align="center" cellpadding="5">
 
+=======
+        <h2>Форма регистрации пользователя</h2>
+        <table>
+>>>>>>> 617dc64cf2ecd50f874cb11ce30a7fb1b163a4db
             <tr>
-                <td align="right"><label for="email">E-mail</label></td>
+                <td><label for="email">E-mail</label></td>
                 <td><input type="email" id="email" name="email" placeholder="Введите e-mail" required></td>
             </tr>
 
             <tr>
-                <td align="right"><label for="pass">Пароль</label></td>
+                <td><label for="pass">Пароль</label></td>
                 <td><input type="password" id="pass" name="pass" placeholder="Введите пароль" required></td>
             </tr>
 
             <tr>
-                <td align="right"><span>Пол</span></td>
+                <td><span>Пол</span></td>
                 <td>
                     <label><input type="radio" name="gender" value="m" checked> Мужчина</label>
                     <label><input type="radio" name="gender" value="f"> Женщина</label>
@@ -31,7 +72,7 @@
             </tr>
 
             <tr>
-                <td align="right"><label for="year">Год рождения</label></td>
+                <td><label for="year">Год рождения</label></td>
                 <td>
                     <select id="year" name="birth_year">
                         <option value="1981">1981</option>
@@ -42,7 +83,7 @@
             </tr>
 
             <tr>
-                <td align="right"><span>Я знаю</span></td>
+                <td><span>Я знаю</span></td>
                 <td>
                     <label><input type="checkbox" checked disabled> Русский</label><br>
                     <label><input type="checkbox"> Испанский</label><br>
@@ -51,23 +92,20 @@
                 </td>
             </tr>
 
-
             <tr>
-                <td align="right" valign="middle"><label for="about">Обо мне</label></td>
+                <td><label for="about">Обо мне</label></td>
                 <td>
-                    <textarea id="about" name="about" placeholder="Напишите коротко о себе" rows="4"
-                        cols="30"></textarea>
+                    <textarea id="about" name="about" placeholder="Напишите коротко о себе" rows="4" cols="30"></textarea>
                 </td>
             </tr>
 
             <tr>
                 <td></td>
-                <td>
+                <td class="buttons">
                     <button type="submit">Готово</button>
                     <button type="reset">Очистить</button>
                 </td>
             </tr>
-
         </table>
     </form>
 </body>
