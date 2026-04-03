@@ -1,33 +1,69 @@
- body {
-            background-color: black;
-            color: white;
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
+@import url("bootstrap-reboot.css")
+/*@import url("reset.css")*/
 
-        .wrapper {
-            max-width: 960px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
 
-        p {
-            text-align: right;
-        }
+.wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-        h1,h2,h3,h4,h5,h6 {
-            text-align: right;
-            font-family: 'Roboto',sans-serif;
-            color: red;
-        }
 
-        i,em {
-            color: green;
-            font-style: italic;
-        }
+p {
+    text-align: left;
+}
 
-        strong {
-            font-family: 'Caveat', cursive;
-        }
+h1,h2,h3,h4,h5,h6 {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    color: #4fc3f7;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+i,em {
+    color: lightgreen;
+    font-style: italic;
+}
+
+strong {
+    font-family: 'Caveat', cursive;
+    color: burlywood;
+    text-align: right;
+}
+
+article {
+    border: 2px solid #333;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.mjx-chtml,.MathJax {
+    color: orange;
+}
