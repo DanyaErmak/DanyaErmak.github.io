@@ -19,11 +19,15 @@
 
         h1,h2,h3,h4,h5,h6 {
             text-align: right;
-            font-family: sans-serif;
+            font-family: 'Roboto',sans-serif;
             color: red;
         }
 
         i,em {
             color: green;
             font-style: italic;
+        }
+
+        strong {
+            font-family: 'Caveat', cursive;
         }
